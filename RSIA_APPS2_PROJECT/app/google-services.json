@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "595687010778",
+    "firebase_url": "https://objectdetection-3fc2f.firebaseio.com",
+    "project_id": "objectdetection-3fc2f",
+    "storage_bucket": "objectdetection-3fc2f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:595687010778:android:e90b1e0d7a4bbfd9fe90e3",
+        "android_client_info": {
+          "package_name": "org.tensorflow.lite.examples.detection"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "595687010778-5gq760nf03i131d5kqfkcuvc80goihp2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "org.tensorflow.lite.examples.detection",
+            "certificate_hash": "58378d060cd29989574dcc28b715ae32095fd1c8"
+          }
+        },
+        {
+          "client_id": "595687010778-hj1ipltdhu1jp9kddm18fi7kcd16ina3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5Be7HtUE8UWjooprD6-ZWkSFxYVxljvI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "595687010778-hj1ipltdhu1jp9kddm18fi7kcd16ina3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

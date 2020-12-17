@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_google_signin_btn_text_dark_default"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_weight=".3"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="266dp"
+            android:layout_height="171dp"
+            android:layout_gravity="center"
+            android:src="@drawable/portada" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/form"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_margin="7dp"
+        android:padding="20dp"
+        android:layout_weight="3.3"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:layout_marginHorizontal="10dp"
+            android:id="@+id/txt_phone"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".65"
+            android:gravity="center_vertical"
+            android:layout_gravity="center"
+            android:layout_marginBottom="19dp"
+            android:background="@drawable/text_redondo"
+            android:drawableLeft="@drawable/ic_settings_cell_black_24dp"
+            android:drawablePadding="10dp"
+            android:drawableTint="@color/black"
+            android:hint="Numero de Celular"
+            android:imeOptions="actionSearch"
+            android:inputType="phone"
+            android:maxLength="15"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="16dp" />
+
+
+        <EditText
+            android:id="@+id/txt_passLog"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:paddingLeft="10dp"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginBottom="19dp"
+            android:layout_weight=".65"
+            android:background="@drawable/text_redondo"
+            android:drawableLeft="@drawable/ic_vpn_key_black_24dp"
+            android:drawablePadding="10dp"
+            android:drawableTint="@color/black"
+
+
+            android:gravity="center_vertical"
+            android:hint="Contraseña"
+            android:inputType="textPassword"
+            android:maxLength="16"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="16dp" />
+
+        <Button
+
+            android:id="@+id/btnIngresar"
+            android:layout_width="@android:dimen/thumbnail_width"
+            android:layout_height="0dp"
+            android:layout_weight=".65"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/boton_redondo"
+            android:gravity="center"
+            android:onClick="onclickIngresar"
+            android:text="INICIAR SESIÓN"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="@android:color/white" />
+
+
+        <TextView
+            android:id="@+id/losspass"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight=".6"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:text="@string/olvid_mi_contrase_a"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+
+
+        <TextView
+            android:id="@+id/mReg"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight=".6"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginBottom="5dp"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:textStyle="bold"
+            android:textFontWeight="@android:integer/status_bar_notification_info_maxnum"
+            android:text="Aun no tengo una cuenta."
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:textColor="@color/black" />
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

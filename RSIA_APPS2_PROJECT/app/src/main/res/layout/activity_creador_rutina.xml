@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout4"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreadorRutinaActivity">
+
+    <EditText
+        android:id="@+id/ettitulocita"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:defaultFocusHighlightEnabled="false"
+        android:hint="(Titulo de la rutina)"
+        app:layout_constraintBottom_toTopOf="@+id/textView6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Descripción"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/etDescription"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ettitulocita" />
+
+    <EditText
+
+        android:id="@+id/etDescription"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="(Descripción)"
+        android:inputType="textMultiLine"
+        android:scrollbars="vertical"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="SELECCIONA"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/selectDate"
+        app:layout_constraintEnd_toStartOf="@+id/textView8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etDescription" />
+
+    <Button
+        android:id="@+id/selectDate"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:onClick="onClickFecha"
+        android:text="FECHA"
+        app:layout_constraintBottom_toTopOf="@+id/selectHourIni"
+        app:layout_constraintEnd_toStartOf="@+id/txtverFecha"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <Button
+        android:id="@+id/selectHourIni"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="9dp"
+        android:onClick="onClickHoraIni"
+        android:text="HORA DE INICIO"
+        app:layout_constraintBottom_toTopOf="@+id/selectHourFin"
+        app:layout_constraintEnd_toStartOf="@+id/txvHourIni"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectDate" />
+
+    <Button
+        android:id="@+id/selectHourFin"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="40dp"
+        android:onClick="onClickHoraFin"
+        android:text="FINALIZACION"
+        app:layout_constraintBottom_toTopOf="@+id/btnOkDay"
+        app:layout_constraintEnd_toStartOf="@+id/txvHourfin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectHourIni" />
+
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center_vertical"
+        android:text="Horario"
+        android:textSize="20dp"
+        android:textStyle="italic|bold"
+        app:layout_constraintBottom_toTopOf="@+id/txtverFecha"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView7" />
+
+    <TextView
+        android:id="@+id/txtverFecha"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="19dp"
+        android:layout_marginRight="19dp"
+        android:gravity="center_vertical"
+        android:text="DIA SELECCIONADO : "
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/selectDate"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txvHourIni"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="54dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginRight="19dp"
+        android:layout_marginBottom="54dp"
+        android:gravity="center_vertical"
+        android:text="HORA DE INICIO : "
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/txvHourfin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/selectHourIni"
+        app:layout_constraintTop_toTopOf="@+id/txtverFecha" />
+
+
+    <TextView
+        android:id="@+id/txvHourfin"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginRight="19dp"
+        android:gravity="center_vertical"
+        android:text="HORA DE FINALIZACION : "
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/selectHourFin"
+        app:layout_constraintTop_toTopOf="@+id/selectHourFin" />
+
+
+    <Button
+        android:id="@+id/btnOkDay"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:padding="0dp"
+        android:text="GUARDAR"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectHourFin" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

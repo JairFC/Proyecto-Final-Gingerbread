@@ -1,0 +1,22 @@
+<resources>
+    <string name="tfe_od_app_name" translation_description="Object Detection demo app [CHAR_LIMIT=40]">TFL Detect</string>
+    <string name="tfe_od_camera_error" translation_description="Error regarding camera support[CHAR_LIMIT=40]">This device doesn\'t support Camera2 API.</string>
+
+    <string name="app_name">MapBoxExample</string>
+    <string name="new_location">nueva location</string>
+    <string name="access_token">pk.eyJ1IjoiamFpcmYiLCJhIjoiY2s4aXEyeGpvMDh5ZTNtbzcxbHAxNnl5YyJ9.hIikvlniHOHPRHO6zmZVPQ</string>
+    <string name="mapbox_style">mapbox://styles/mapbox/dark-v10</string>
+
+
+    <string name="olvid_mi_contrase_a"><u>Olvidé mi contraseña.</u></string>
+    <string name="olvid_mi_contrasena"><u>Olvidé mi contraseña.</u></string>
+    <string name="nav_titulo_opciones">Opciones</string>
+    <string name="nav_acerca">Acerca de</string>
+    <string name="nav_compartir">Compartir App</string>
+    <string name="nav_salir">Salir</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="mapbox_key">pk.eyJ1IjoibHVpc3RyZWpvIiwiYSI6ImNqNWJhamZ2NTBoczMycW1taGg1dnZsbjAifQ.t2uweldQ7LBMWxhrAyVP4w</string>
+    <string name="title_activity_formulario_rutinas">FormularioRutinasActivity</string>
+</resources>
